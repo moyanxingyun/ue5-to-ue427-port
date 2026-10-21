@@ -1,0 +1,6 @@
+interface:
+  display_name: "UE5 → UE4.27 资源迁移"
+  short_description: "导出并重建 UE5 资源到 UE 4.27"
+  default_prompt: "Use $ue5-to-ue427-port to inspect this UE5 pack and plan a resumable UE 4.27 migration."
+policy:
+  allow_implicit_invocation: true

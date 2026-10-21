@@ -1,0 +1,399 @@
+{
+  "project": {
+    "name": "ExamplePort"
+  },
+  "paths": {
+    "dumps": "D:/PortKitWork/Example/dumps",
+    "materials_json": "D:/PortKitWork/Example/export/materials.json",
+    "materials_extra_json": "D:/PortKitWork/Example/export/materials_extra.json",
+    "manifest": "D:/PortKitWork/Example/export/manifest.json",
+    "textures_map": "D:/PortKitWork/Example/export/textures_map.json",
+    "textures_map_extra": "D:/PortKitWork/Example/export/textures_map_extra.json",
+    "textures": "D:/PortKitWork/Example/export/Textures",
+    "textures_extra": "D:/PortKitWork/Example/export/Textures_Extra",
+    "settings": "D:/PortKitWork/Example/export/settings.json",
+    "reports": "D:/PortKitWork/Example/reports",
+    "graph_work": "D:/PortKitWork/Example/graph_work",
+    "verify_t3d": "D:/PortKitWork/Example/verify_t3d",
+    "probe_427": "D:/PortKitWork/Example/probe_427.json"
+  },
+  "ue5": {
+    "asset_root": "/Game/YourPack",
+    "game_root": "/Game",
+    "master_assets": [
+      "/Game/YourPack/Materials/MM_YourMaster"
+    ],
+    "probe": {
+      "asset_roots": [
+        "/Game/YourPack"
+      ]
+    },
+    "exports": {
+      "meshes": {
+        "asset_root": "/Game/YourPack",
+        "mesh_root": "/Game/YourPack/Meshes",
+        "include": [
+          "Building"
+        ],
+        "exact": [],
+        "exclude": [
+          "/LOD1/",
+          "/LOD2/",
+          "/Foliage/"
+        ],
+        "output": "D:/PortKitWork/Example/export"
+      },
+      "foliage": {
+        "asset_root": "/Game/YourPack",
+        "mesh_root": "/Game/YourPack/Meshes",
+        "include": [
+          "Foliage",
+          "Vegetation"
+        ],
+        "exact": [],
+        "exclude": [
+          "/LOD1/",
+          "/LOD2/"
+        ],
+        "output": "D:/PortKitWork/Example/foliage"
+      },
+      "all_mis": {
+        "asset_root": "/Game/YourPack",
+        "output": "D:/PortKitWork/Example/export",
+        "masters": [
+          "MM_AssetMaster",
+          "MM_SimpleAsset"
+        ]
+      },
+      "bp_instances": {
+        "blueprint_hint": "BP_YourPlacedBlueprint",
+        "output": "D:/PortKitWork/Example/placement"
+      },
+      "bp_spawn": {
+        "search_roots": [
+          "/Game/YourPack"
+        ],
+        "output": "D:/PortKitWork/Example/blueprints",
+        "known_manifests": [
+          "D:/PortKitWork/Example/export/manifest.json"
+        ],
+        "spawn_z": -200000.0
+      },
+      "texture_pack": {
+        "asset_root": "/Game/YourPack/Decals",
+        "output": "D:/PortKitWork/Example/decals",
+        "skip_contains": [
+          "/Demo/",
+          "_height"
+        ]
+      }
+    }
+  },
+  "ue427": {
+    "target_root": "/Game/ThirdParty/YourPack",
+    "struct_meshes": "/Game/ThirdParty/YourPack/Meshes",
+    "imports": {
+      "assets": {
+        "input": "D:/PortKitWork/Example/export",
+        "destination": "/Game/ThirdParty/YourPack",
+        "texture_folder": "Textures",
+        "material_folder": "Materials",
+        "mesh_folder": "Meshes",
+        "texture_cap": 2048,
+        "heavy_vertices": 250000,
+        "only": [],
+        "master_prefix": "M_Port_Asset",
+        "fill_marker": "T_L_Fill_",
+        "rebuild_existing": false,
+        "lod_screen_sizes": [
+          1.0,
+          0.25,
+          0.1,
+          0.04
+        ],
+        "report_dir": "D:/PortKitWork/Example/reports"
+      },
+      "foliage": {
+        "input": "D:/PortKitWork/Example/foliage",
+        "destination": "/Game/ThirdParty/YourPack/Foliage",
+        "texture_folder": "Textures",
+        "material_folder": "Materials",
+        "mesh_folder": "Meshes",
+        "texture_cap": 4096,
+        "heavy_vertices": 250000,
+        "master_prefix": "M_Port_Foliage",
+        "generate_collision": false,
+        "rebuild_existing": false,
+        "lod_screen_sizes": [
+          1.0,
+          0.25,
+          0.1,
+          0.04
+        ],
+        "report_dir": "D:/PortKitWork/Example/reports",
+        "foliage_material": {
+          "master_name": "M_Port_Foliage",
+          "global_instance_name": "MI_PortFoliage_Global",
+          "opaque_global_instance": "",
+          "instance_prefix": "MI_Port_Foliage_",
+          "blend_mode": "BLEND_MASKED",
+          "shading_model": "MSM_TWO_SIDED_FOLIAGE",
+          "two_sided": true,
+          "opacity_mask_clip_value": 0.4,
+          "used_with_instanced_static_meshes": true,
+          "used_with_static_lighting": true,
+          "flip_green_name_tokens": [
+            "OpenGL"
+          ],
+          "texture_keys": {
+            "BaseColor": [
+              "00_basecolor",
+              "albedo",
+              "base_color",
+              "base color",
+              "basecolor",
+              "diffuse",
+              "albedo_bakemap"
+            ],
+            "Normal": [
+              "00_normal",
+              "normal",
+              "normals",
+              "normal_bakemap"
+            ],
+            "ORM": [
+              "00_orm",
+              "00_ormh",
+              "00_orh",
+              "orm",
+              "arm",
+              "ort",
+              "masks",
+              "orm_bakemap"
+            ],
+            "OpacityMask": [
+              "00_opacitymask",
+              "alpha map",
+              "opacity_mask"
+            ]
+          },
+          "texture_suffixes": {
+            "BaseColor": [
+              "_bc",
+              "_basecolor",
+              "_albedo",
+              "_diffuse",
+              "_colormap",
+              "_color",
+              "_d"
+            ],
+            "Normal": [
+              "_n",
+              "_normal",
+              "_nrm",
+              "_nmap",
+              "_norm"
+            ],
+            "ORM": [
+              "_orm",
+              "_ormh",
+              "_rma",
+              "_ormp",
+              "_os"
+            ],
+            "ORMBan": [
+              "normal",
+              "_n",
+              "mask"
+            ],
+            "OpacityMask": [
+              "_mask",
+              "_opacitymask",
+              "_opacity",
+              "_alpha",
+              "_op"
+            ]
+          },
+          "tint_vector_keys": [
+            "00_BaseColorTint",
+            "Albedo Tint",
+            "Albedo_tint"
+          ],
+          "uv_vector_key": "00_UVTiling",
+          "uv_scalar_keys": [
+            "Tiling",
+            "UV Scale_BakeMap"
+          ],
+          "normal_scalar_keys": [
+            "00_NormalIntensity",
+            "Normal Intensity",
+            "Normal_Intensity"
+          ],
+          "normal_minimum": 0.05,
+          "parameter_names": {
+            "uv_tiling": "UVTiling",
+            "base_color": "BaseColor",
+            "normal": "Normal",
+            "orm": "ORM",
+            "opacity_mask": "OpacityMask",
+            "tint": "Tint",
+            "global_tint": "GlobalTint",
+            "global_brightness": "GlobalBrightness",
+            "subsurface_tint": "SubsurfaceTint",
+            "normal_intensity": "NormalIntensity",
+            "use_orm": "UseORM",
+            "roughness": "Roughness",
+            "specular": "Specular",
+            "opacity_from_alpha": "OpacityFromAlpha"
+          },
+          "defaults": {
+            "tint": [1.0, 1.0, 1.0, 1.0],
+            "global_tint": [1.0, 1.0, 1.0, 1.0],
+            "global_brightness": 1.0,
+            "subsurface_tint": [0.6, 0.6, 0.5, 1.0],
+            "normal_intensity": 1.0,
+            "use_orm": 1.0,
+            "roughness": 0.7,
+            "specular": 0.3,
+            "opacity_from_alpha": 1.0
+          },
+          "wind": {
+            "enabled": true,
+            "function": "/Engine/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind",
+            "group": "Wind",
+            "intensity": {
+              "parameter": "WindIntensity",
+              "default": 0.0,
+              "input": "WindIntensity"
+            },
+            "weight": {
+              "parameter": "WindWeight",
+              "default": 0.5,
+              "input": "WindWeight"
+            },
+            "speed": {
+              "parameter": "WindSpeed",
+              "default": 0.3,
+              "input": "WindSpeed"
+            }
+          }
+        }
+      },
+      "decals": {
+        "input": "D:/PortKitWork/Example/decals",
+        "destination": "/Game/ThirdParty/YourPack/Decals",
+        "texture_folder": "Textures",
+        "master_name": "M_Port_Decal",
+        "max_texture_size": 2048,
+        "average_color": [
+          0.07,
+          0.057,
+          0.04
+        ],
+        "default_contrast": 0.6,
+        "rebuild_existing": false,
+        "report_dir": "D:/PortKitWork/Example/reports"
+      }
+    },
+    "rebuild_instances": {
+      "instances_json": "D:/PortKitWork/Example/placement/instances.json",
+      "mesh_roots": [
+        "/Game/ThirdParty/YourPack/Meshes",
+        "/Game/ThirdParty/YourPack/Foliage/Meshes"
+      ],
+      "material_roots": [
+        "/Game/ThirdParty/YourPack/Materials",
+        "/Game/ThirdParty/YourPack/Foliage/Materials"
+      ],
+      "outliner_folder": "PortKitRebuilt",
+      "instance_prefix": "MI_Port_",
+      "engine_cube": "/Engine/BasicShapes/Cube",
+      "max_instances": 0,
+      "only_meshes": [],
+      "rebuild_existing": false,
+      "report_dir": "D:/PortKitWork/Example/reports"
+    },
+    "attach_root": {
+      "outliner_folder": "PortKitRebuilt",
+      "root_label": "PortKit_Root",
+      "mode": "attach",
+      "report_dir": "D:/PortKitWork/Example/reports"
+    },
+    "probe_temp_folder": "/Game/_PortKit_Probe",
+    "probe": {
+      "engine_functions": [
+        "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3"
+      ]
+    }
+  },
+  "material": {
+    "master_name": "MM_YourMaster",
+    "func_dir": "/Game/YourPack/Materials/Material_Function",
+    "variant_dir": "/Game/YourPack/Materials/Material_Function/Variants",
+    "combo_dir": "/Game/YourPack/Materials/Combos",
+    "native_pow": false,
+    "max_combos": 50,
+    "only_combos": null,
+    "master_range": null,
+    "rebuild_existing": false,
+    "do_textures": true,
+    "do_meshes": true,
+    "extra": false,
+    "extra_filter": "",
+    "fix_functions": [],
+    "rebuild_funcs": [],
+    "verify_assets": []
+  },
+  "tools": {
+    "texture_cap": {
+      "mode": "apply",
+      "roots": [
+        "/Game"
+      ],
+      "exclude": [
+        "/Engine/",
+        "/UI/",
+        "/HUD/"
+      ],
+      "cap": 2048,
+      "backup": "D:/PortKitWork/Example/reports/texture_cap_backup.json"
+    },
+    "lod_distance": {
+      "static_scale": 0.35,
+      "foliage_scale": 2.5
+    },
+    "streaming_pool": {
+      "megabytes": 6000
+    },
+    "match_color": {
+      "mode": "apply",
+      "reference_material": "/Game/Landscape/YourLandscapeMaterial",
+      "reference_texture_parameter": "BaseColor",
+      "reference_vector_multipliers": {},
+      "reference_scalar_multipliers": {},
+      "target_folder": "/Game/ThirdParty/YourPack/Decals",
+      "instance_prefix": "MI_Port_",
+      "target_texture_parameter": "BaseColor",
+      "tint_parameter": "Tint",
+      "brightness_parameter": "Brightness",
+      "darkness": {
+        "": 0.9
+      },
+      "target_averages": {},
+      "max_tint": 8.0,
+      "temp_tga": "D:/PortKitWork/Example/reports/_match_color_tmp.tga"
+    },
+    "switch_fallback": {
+      "mode": "apply",
+      "mesh_folder": "/Game/ThirdParty/YourPack/Meshes",
+      "material_folder": "/Game/ThirdParty/YourPack/Materials",
+      "fallback_prefix": "MI_Fallback_",
+      "candidate_templates": [
+        "MI_Fallback_{short}",
+        "MI_Fallback_{name}"
+      ],
+      "backup": "D:/PortKitWork/Example/reports/fallback_materials_backup.json"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+config.json
+
+/export/
+/exports/
+/output/
+/outputs/
+/data/
+/dumps/
+/graph_work/
+/verify_t3d/
+
+*_draft*.md
+CODEX_TASKS*.md
