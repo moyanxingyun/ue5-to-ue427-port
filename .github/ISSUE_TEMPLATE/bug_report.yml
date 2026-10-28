@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible PortKit bug
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remove private paths, usernames and proprietary asset names before submitting.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Workflow stage
+      options:
+        - UE5 probe/export
+        - UE 4.27 import
+        - Material transplant
+        - Placement
+        - Diagnostics/cleanup
+        - Test or documentation
+    validations:
+      required: true
+  - type: input
+    id: engine-version
+    attributes:
+      label: Unreal Engine version
+      placeholder: "UE 5.4.4 or UE 4.27.2"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Use the following entry script...
+        2. Run with this config structure...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: reports
+    attributes:
+      label: Sanitized reports or logs
+      description: Include only the relevant excerpt after removing private information.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I removed private paths, usernames and proprietary asset names.
+          required: true

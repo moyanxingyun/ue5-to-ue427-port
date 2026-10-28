@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">PortKit — UE5 to UE 4.27 asset migration toolkit</title>
+  <desc id="desc">Export UE5 assets to FBX, images, JSON and material dumps, then rebuild them in UE 4.27.</desc>
+  <defs>
+    <linearGradient id="socialBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050e1a"/>
+      <stop offset=".58" stop-color="#0b1b2e"/>
+      <stop offset="1" stop-color="#102b39"/>
+    </linearGradient>
+    <linearGradient id="socialAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3ff1cf"/>
+      <stop offset="1" stop-color="#62a8ff"/>
+    </linearGradient>
+    <pattern id="socialGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8bb8d8" stroke-opacity=".06"/>
+    </pattern>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" fill="url(#socialBg)"/>
+  <rect width="1280" height="640" fill="url(#socialGrid)"/>
+  <circle cx="1180" cy="80" r="230" fill="#39dac0" opacity=".08" filter="url(#softGlow)"/>
+  <circle cx="1110" cy="625" r="260" fill="#4f8fff" opacity=".1" filter="url(#softGlow)"/>
+
+  <g transform="translate(76 68)">
+    <rect width="476" height="40" rx="20" fill="#42f5d3" opacity=".11"/>
+    <circle cx="21" cy="20" r="6" fill="#42f5d3"/>
+    <text x="40" y="26" fill="#a8ffe9" font-family="Segoe UI, sans-serif" font-size="16" font-weight="650" letter-spacing="2">UNREAL EDITOR PYTHON TOOLKIT</text>
+    <text x="0" y="142" fill="#f7fbff" font-family="Segoe UI, sans-serif" font-size="104" font-weight="780" letter-spacing="-4">PortKit</text>
+    <text x="2" y="208" fill="#61a8ff" font-family="Segoe UI, Consolas, sans-serif" font-size="45" font-weight="700">UE5  →  UE 4.27</text>
+    <text x="3" y="264" fill="#c0cfdd" font-family="Segoe UI, sans-serif" font-size="27" font-weight="550">Export assets. Rebuild materials. Verify results.</text>
+    <text x="3" y="307" fill="#8096aa" font-family="Segoe UI, sans-serif" font-size="20">Meshes · Textures · Materials · Decals · Foliage · Placement</text>
+    <g transform="translate(2 353)">
+      <rect width="130" height="42" rx="10" fill="#14263a" stroke="#28435d"/>
+      <text x="19" y="27" fill="#c3d9e9" font-family="Segoe UI, sans-serif" font-size="15" font-weight="600">OPEN SOURCE</text>
+      <rect x="142" width="86" height="42" rx="10" fill="#14263a" stroke="#28435d"/>
+      <text x="167" y="27" fill="#c3d9e9" font-family="Segoe UI, sans-serif" font-size="15" font-weight="600">MIT</text>
+    </g>
+  </g>
+
+  <g transform="translate(663 109)">
+    <rect width="530" height="420" rx="28" fill="#091523" fill-opacity=".94" stroke="#294861" stroke-width="1.5"/>
+    <text x="34" y="48" fill="#8197aa" font-family="Segoe UI, sans-serif" font-size="15" font-weight="650" letter-spacing="1.8">DISK-BASED MIGRATION BRIDGE</text>
+
+    <g transform="translate(34 84)">
+      <rect width="118" height="210" rx="18" fill="#10253b" stroke="#2a5d80"/>
+      <text x="20" y="40" fill="#68dcff" font-family="Segoe UI, sans-serif" font-size="17" font-weight="750">UE 5</text>
+      <text x="20" y="78" fill="#f4f9ff" font-family="Segoe UI, sans-serif" font-size="25" font-weight="750">Source</text>
+      <text x="20" y="111" fill="#859caf" font-family="Segoe UI, sans-serif" font-size="15">Probe</text>
+      <text x="20" y="140" fill="#859caf" font-family="Segoe UI, sans-serif" font-size="15">Export</text>
+      <text x="20" y="169" fill="#859caf" font-family="Segoe UI, sans-serif" font-size="15">Report</text>
+    </g>
+
+    <path d="M158 189 H184" stroke="url(#socialAccent)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M177 179 L188 189 L177 199" fill="none" stroke="#5ba8ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(196 84)">
+      <rect width="152" height="210" rx="18" fill="#0f2a31" stroke="#2f8f87"/>
+      <text x="22" y="40" fill="#7fffe4" font-family="Segoe UI, sans-serif" font-size="17" font-weight="750">BRIDGE</text>
+      <text x="22" y="88" fill="#f4f9ff" font-family="Consolas, monospace" font-size="19" font-weight="700">FBX</text>
+      <text x="22" y="120" fill="#f4f9ff" font-family="Consolas, monospace" font-size="19" font-weight="700">PNG / TGA</text>
+      <text x="22" y="152" fill="#f4f9ff" font-family="Consolas, monospace" font-size="19" font-weight="700">JSON</text>
+      <text x="22" y="184" fill="#f4f9ff" font-family="Consolas, monospace" font-size="19" font-weight="700">T3D</text>
+    </g>
+
+    <path d="M356 189 H382" stroke="url(#socialAccent)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M375 179 L386 189 L375 199" fill="none" stroke="#5ba8ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(394 84)">
+      <rect width="102" height="210" rx="18" fill="#15233d" stroke="#42669c"/>
+      <text x="18" y="40" fill="#9dc1ff" font-family="Segoe UI, sans-serif" font-size="17" font-weight="750">UE 4.27</text>
+      <text x="18" y="78" fill="#f4f9ff" font-family="Segoe UI, sans-serif" font-size="25" font-weight="750">Build</text>
+      <text x="18" y="112" fill="#859caf" font-family="Segoe UI, sans-serif" font-size="15">Import</text>
+      <text x="18" y="141" fill="#859caf" font-family="Segoe UI, sans-serif" font-size="15">Verify</text>
+      <text x="18" y="170" fill="#859caf" font-family="Segoe UI, sans-serif" font-size="15">Place</text>
+    </g>
+
+    <rect x="34" y="328" width="462" height="1" fill="#223b52"/>
+    <text x="34" y="358" fill="#9bb1c3" font-family="Segoe UI, sans-serif" font-size="17">Read-only probes · Resumable batches · Actionable reports</text>
+    <text x="34" y="389" fill="#688096" font-family="Segoe UI, sans-serif" font-size="14">github.com/moyanxingyun/ue5-to-ue427-port</text>
+  </g>
+</svg>
